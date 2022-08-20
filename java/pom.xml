@@ -26,11 +26,17 @@
         <module>tmaven</module>
         <module>tmaven2</module>
         <module>tquartz</module>
+        <module>simple-web</module>
+        <module>spring_boot_test</module>
+        <module>mytest-junit5</module>
+        <module>lg-training-camp</module>
 
     </modules>
 
     <properties>
         <spring.version>4.3.26.RELEASE</spring.version>
+        <spring.boot.version>2.6.6</spring.boot.version>
+        <spring.cloud.version>2021.0.2</spring.cloud.version>
         <mybatis.version>3.5.4</mybatis.version>
         <mybatis-spring.version>2.0.4</mybatis-spring.version>
         <javax.version>4.0.1</javax.version>
@@ -42,7 +48,7 @@
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>4.13</version>
+                <version>4.13.2</version>
                 <scope>test</scope>
             </dependency>
             <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
@@ -87,7 +93,21 @@
                 <scope>provided</scope>
             </dependency>
 
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
 
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
