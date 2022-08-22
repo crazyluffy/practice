@@ -3,73 +3,83 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="-39.5" y="298.0">java.util.AbstractMap</node>
-    <node x="-50.5" y="538.0">java.util.LinkedHashMap</node>
-    <node x="115.0" y="418.0">java.util.TreeMap</node>
-    <node x="211.5" y="298.0">java.util.Hashtable</node>
-    <node x="-50.0" y="-22.0">java.util.AbstractCollection</node>
-    <node x="-86.5" y="418.0">java.util.HashMap</node>
-    <node x="-25.0" y="98.0">java.util.AbstractSet</node>
-    <node x="-48.5" y="178.0">java.util.Map</node>
+    <node x="349.5" y="178.0">java.util.Map</node>
+    <node x="311.5" y="418.0">java.util.HashMap</node>
+    <node x="-125.5" y="298.0">java.util.concurrent.ConcurrentMap</node>
+    <node x="2.5" y="418.0">java.util.concurrent.ConcurrentHashMap</node>
+    <node x="347.5" y="538.0">java.util.LinkedHashMap</node>
+    <node x="358.5" y="298.0">java.util.AbstractMap</node>
+    <node x="609.5" y="298.0">java.util.Hashtable</node>
+    <node x="513.0" y="418.0">java.util.TreeMap</node>
   </nodes>
   <notes />
   <edges>
+    <edge source="java.util.concurrent.ConcurrentHashMap" target="java.util.concurrent.ConcurrentMap" relationship="REALIZATION">
+      <point x="-118.0" y="-14.0" />
+      <point x="28.0" y="14.0" />
+    </edge>
     <edge source="java.util.TreeMap" target="java.util.Map" relationship="REALIZATION">
       <point x="-20.0" y="-14.0" />
-      <point x="178.0" y="272.0" />
-      <point x="18.0" y="272.0" />
+      <point x="576.0" y="272.0" />
+      <point x="416.0" y="272.0" />
       <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="java.util.concurrent.ConcurrentMap" target="java.util.Map" relationship="INTERFACE_GENERALIZATION">
+      <point x="-0.0" y="-14.0" />
+      <point x="-18.0" y="192.0" />
+      <point x="-66.5" y="-0.0" />
     </edge>
     <edge source="java.util.Hashtable" target="java.util.Map" relationship="REALIZATION">
       <point x="0.0" y="-14.0" />
-      <point x="298.0" y="272.0" />
-      <point x="18.0" y="272.0" />
-      <point x="0.0" y="14.0" />
-    </edge>
-    <edge source="java.util.AbstractSet" target="java.util.AbstractCollection" relationship="GENERALIZATION">
-      <point x="0.0" y="-14.0" />
+      <point x="696.0" y="272.0" />
+      <point x="416.0" y="272.0" />
       <point x="0.0" y="14.0" />
     </edge>
     <edge source="java.util.TreeMap" target="java.util.AbstractMap" relationship="GENERALIZATION">
       <point x="-60.0" y="-14.0" />
-      <point x="138.0" y="392.0" />
-      <point x="58.0" y="392.0" />
+      <point x="536.0" y="392.0" />
+      <point x="456.0" y="392.0" />
       <point x="0.0" y="14.0" />
     </edge>
     <edge source="java.util.LinkedHashMap" target="java.util.HashMap" relationship="GENERALIZATION">
       <point x="-60.0" y="-14.0" />
       <point x="0.0" y="14.0" />
     </edge>
+    <edge source="java.util.concurrent.ConcurrentHashMap" target="java.util.AbstractMap" relationship="GENERALIZATION">
+      <point x="-0.0" y="-14.0" />
+      <point x="128.0" y="312.0" />
+      <point x="-97.5" y="-0.0" />
+    </edge>
     <edge source="java.util.LinkedHashMap" target="java.util.Map" relationship="REALIZATION">
       <point x="-100.0" y="-14.0" />
-      <point x="-42.0" y="512.0" />
-      <point x="-102.0" y="512.0" />
-      <point x="-102.0" y="272.0" />
-      <point x="18.0" y="272.0" />
+      <point x="356.0" y="512.0" />
+      <point x="296.0" y="512.0" />
+      <point x="296.0" y="272.0" />
+      <point x="416.0" y="272.0" />
       <point x="0.0" y="14.0" />
     </edge>
     <edge source="java.util.HashMap" target="java.util.Map" relationship="REALIZATION">
       <point x="-40.0" y="-14.0" />
-      <point x="-42.0" y="392.0" />
-      <point x="-62.0" y="392.0" />
-      <point x="-62.0" y="272.0" />
-      <point x="18.0" y="272.0" />
+      <point x="356.0" y="392.0" />
+      <point x="336.0" y="392.0" />
+      <point x="336.0" y="272.0" />
+      <point x="416.0" y="272.0" />
       <point x="0.0" y="14.0" />
     </edge>
     <edge source="java.util.AbstractMap" target="java.util.Map" relationship="REALIZATION">
       <point x="0.0" y="-14.0" />
-      <point x="58.0" y="272.0" />
-      <point x="18.0" y="272.0" />
+      <point x="456.0" y="272.0" />
+      <point x="416.0" y="272.0" />
       <point x="0.0" y="14.0" />
     </edge>
     <edge source="java.util.HashMap" target="java.util.AbstractMap" relationship="GENERALIZATION">
       <point x="40.0" y="-14.0" />
-      <point x="38.0" y="392.0" />
-      <point x="58.0" y="392.0" />
+      <point x="436.0" y="392.0" />
+      <point x="456.0" y="392.0" />
       <point x="0.0" y="14.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Compact" zoom="1.455592105263158" showDependencies="false" x="151.5" y="282.0" />
+  <settings layout="Hierarchic Compact" zoom="1.455592105263158" showDependencies="false" x="481.50282485875704" y="428.0" />
   <SelectedNodes>
     <node>java.util.Hashtable</node>
   </SelectedNodes>
