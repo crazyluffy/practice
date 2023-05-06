@@ -1,16 +1,16 @@
 ### rebase  修正历史提交
 
-rebase 基本作用为 以某次提交作为基准对比提交本地文件，一般是以某一分支最后一次提交为基准。
-rebase -i 即 rebase --interactive
-    可以以本分支某次commit作为基准，该commit之后的提交根据选择进行相应处理
+rebase 基本作用为 以某次提交作为基准对比提交本地文件，一般是以某一分支最后一次提交为基准。  
+rebase -i 即 rebase --interactive  
+    可以以本分支某次commit作为基准，该commit之后的提交根据选择进行相应处理  
     
 ```
 edit: 使用本次提交，在rebase到这次提交时候，会暂停下来等待修正
 pick:使用本次提交，不操作修改
 drop:删除这次提交
 ```
-git rebase -i *commit* 后 git会暂停，并弹出文本提示需要怎样处理。  编辑文本，决定 具体分支是否修改、删除
-截取样例：
+git rebase -i *commit* 后 git会暂停，并弹出文本提示需要怎样处理。  编辑文本，决定 具体分支是否修改、删除  
+截取样例：  
 
 ```
 
@@ -47,9 +47,9 @@ pick 338955c 提交12
 ~                                            
 ```
 
-文件保存后，git在需要edit的commit出暂停，等待此次修改，如补充该次提交遗漏的文件。
-使用 git commit --amend 提交变更
-之后使用 git rebase --continue 继续进行rebase
+文件保存后，git在需要edit的commit出暂停，等待此次修改，如补充该次提交遗漏的文件。  
+使用 git commit --amend 提交变更  
+之后使用 git rebase --continue 继续进行rebase  
 
 ```
 Stopped at e47fa58...  提交11
@@ -62,6 +62,6 @@ Once you are satisfied with your changes, run
   git rebase --continue
 ```
 
-[原文链接](https://www.jianshu.com/p/d4466fad6162)
+[原文链接](https://www.jianshu.com/p/d4466fad6162)  
 
 
