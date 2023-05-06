@@ -65,3 +65,25 @@ Once you are satisfied with your changes, run
 [原文链接](https://www.jianshu.com/p/d4466fad6162)  
 
 
+### git commit 
+
+```
+-C <commit>
+--reuse-message=<commit>
+    Take an existing commit object, and reuse the log message and the authorship information (including the timestamp) when creating the commit.
+
+-c <commit>
+--reedit-message=<commit>
+    Like -C, but with -c the editor is invoked, so that the user can further edit the commit message.
+
+-F <file>
+--file=<file>
+    Take the commit message from the given file. Use - to read the message from the standard input.
+
+-m <msg>
+--message=<msg>
+    Use the given <msg> as the commit message. If multiple -m options are given, their values are concatenated as separate paragraphs.
+    
+    The -m option is mutually exclusive with -c, -C, and -F.
+```
+
